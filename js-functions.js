@@ -40,7 +40,7 @@ const students  = [
 
 const updatedStudents = students.map(student => {
     const totalmarks = student.marks.reduce((acc, mark) => {return acc + mark}, 0);
-    const percentage = ((totalmarks / 150) * 100).toFixed(2);
+    const percentage = ((totalmarks/150)*100).toFixed(2);
     const resultstatus = percentage >= 60 ? "pass" : "fail";
 
     return {
@@ -51,3 +51,14 @@ const updatedStudents = students.map(student => {
     };
 });
 
+console.log(updatedStudentsdata);
+
+// task
+//use filter function to get the students who passed the course
+//use filter function to get the students who failed the course 
+
+const passedStudents = updatedStudents.filter(student => student.resultstatus === "pass");
+const failedStudents = updatedStudents.filter(student => student.resultstatus === "fail");
+
+console.log("Passed Students:", passedStudents);
+console.log("Failed Students:", failedStudents);
