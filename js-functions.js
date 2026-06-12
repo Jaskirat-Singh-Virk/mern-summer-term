@@ -62,3 +62,4 @@ const failedStudents = updatedStudents.filter(student => student.resultstatus ==
 
 console.log("Passed Students:", passedStudents);
 console.log("Failed Students:", failedStudents);
+
