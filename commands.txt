@@ -1,0 +1,2 @@
+npm create vite@latest
+sudo npm run dev
